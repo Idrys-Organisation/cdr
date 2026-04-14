@@ -381,6 +381,61 @@
     flex: 1;
   }
 
+  /* ── Papers catalogue ─────────────────────────────── */
+  .paper-group {
+    margin: 2.5rem 0;
+  }
+
+  .paper-group h3 {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+
+  .paper-item {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 0.8rem 0;
+    transition: border-color 0.2s;
+  }
+
+  .paper-item:hover {
+    border-color: var(--accent);
+  }
+
+  .paper-item .paper-title {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .paper-item .paper-meta {
+    font-family: 'Courier New', monospace;
+    font-size: 0.82rem;
+    color: var(--accent2);
+    margin-bottom: 0.4rem;
+  }
+
+  .paper-item .paper-meta .citations {
+    color: var(--accent3);
+    margin-left: 0.5rem;
+  }
+
+  .paper-item .paper-summary {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+
+  .paper-count {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-top: 0.3rem;
+  }
+
   /* ── Footer ──────────────────────────────────────── */
   .footer {
     text-align: center;
@@ -1130,59 +1185,234 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════
-     CHAPTER 9: ROBERTS' RESEARCH TRAJECTORY
+     CHAPTER 9: A RESEARCH CAREER
      ═══════════════════════════════════════════════════ -->
 <section class="chapter" id="ch9">
   <div class="chapter-number">Chapter 9</div>
-  <h2>A Career in Four Acts</h2>
+  <h2>A Research Career</h2>
 
   <p>
-    Roberts' research trajectory mirrors the development of the field itself. His career
-    can be understood as a sustained, systematic programme to answer a single question:
-    <em>How does QCD build matter?</em>
+    Craig Darrian Roberts is one of the most influential theoretical physicists working in
+    nonperturbative quantum chromodynamics. Over a career spanning nearly four decades, he has
+    transformed the Dyson&ndash;Schwinger equations from a formal theoretical apparatus into the
+    premier quantitative tool for understanding hadron structure, dynamical mass generation, and
+    the emergence of visible matter in the Universe.
   </p>
+
+  <h3>Adelaide and the early years (1985&ndash;1992)</h3>
+
+  <p>
+    Roberts received his PhD in theoretical physics from the Flinders University of South Australia
+    on 10 May 1988. His doctoral work, in collaboration with Anthony G. Williams (later at the
+    University of Adelaide), laid the groundwork for what would become a career-defining programme:
+    applying the Dyson&ndash;Schwinger equations of QCD to nonperturbative phenomena including
+    confinement and dynamical chiral symmetry breaking. A key early insight was that confinement in
+    quantum field theory is expressed through the absence of real-axis mass poles in the quark
+    propagator &mdash; replaced instead by complex-conjugate singularities, meaning quarks cannot
+    exist as free particles.
+  </p>
+
+  <p>
+    Following a postdoctoral fellowship at the University of Melbourne (1987&ndash;1989), Roberts
+    joined the Theory Group in the Physics Division at Argonne National Laboratory in 1989 as a
+    Research Associate. His rise was rapid: Assistant Physicist (1991&ndash;1996), then Physicist
+    (1996&ndash;2006), then Senior Physicist (2006&ndash;2019).
+  </p>
+
+  <h3>Building the DSE programme at Argonne (1992&ndash;2000)</h3>
+
+  <p>
+    In 1994, Roberts and Williams published &ldquo;Dyson&ndash;Schwinger Equations and their
+    Application to Hadronic Physics&rdquo; in <em>Progress in Particle and Nuclear Physics</em>.
+    This review &mdash; with over 1,280 citations &mdash; remains the most-cited article in
+    hadro-particle theory by an Australian-born scientist. It systematically showed how the tower
+    of coupled integral equations governing QCD&rsquo;s Green functions could be truncated in a
+    symmetry-preserving manner and solved to yield predictions for confinement and DCSB. It
+    effectively established the DSE programme as a serious competitor to lattice QCD for
+    nonperturbative calculations.
+  </p>
+
+  <p>
+    During this period Roberts began his extraordinarily productive collaboration with
+    <strong>Peter Maris</strong> (then at Argonne, later Iowa State) and <strong>Peter C. Tandy</strong>
+    (Kent State University). The trio produced landmark calculations of pseudoscalar meson
+    properties. Their 1997 papers on pion mass and decay constant and on pi- and K-meson
+    Bethe&ndash;Salpeter amplitudes demonstrated that DSE methods could simultaneously preserve the
+    Goldstone theorem, reproduce the Gell-Mann&ndash;Oakes&ndash;Renner relation as a corollary
+    of the axial-vector Ward&ndash;Takahashi identity, and yield quantitative predictions for the
+    pion and kaon in excellent agreement with experiment. Each of these papers accumulated over 500
+    citations and became cornerstones of the field.
+  </p>
+
+  <p>
+    In 2000, Roberts and <strong>Sebastian M. Schmidt</strong> (Forschungszentrum J&uuml;lich)
+    published another major review extending DSE applications to finite temperature and density,
+    covering the QCD phase diagram, deconfinement transitions, and the properties of quark-gluon
+    plasma. This too garnered over 640 citations.
+  </p>
+
+  <div class="info-card">
+    <div class="card-title">Theory Group Leader</div>
+    In 2001, Roberts was appointed Leader of the Theory Group at Argonne &mdash; the youngest
+    person ever to hold that position. He served until 2017, the longest tenure of any holder.
+    Under his leadership the group became synonymous with DSE-based hadron physics worldwide.
+  </div>
+
+  <h3>The Brodsky collaboration and in-hadron condensates (2008&ndash;2015)</h3>
+
+  <p>
+    The collaboration with <strong>Stanley J. Brodsky</strong> (SLAC) proved transformative. In a
+    series of influential papers beginning around 2010, Roberts and Brodsky challenged the
+    conventional picture that chiral symmetry breaking condensates fill all of spacetime. Their
+    work demonstrated that the chiral condensate is properly understood as a property of hadrons
+    themselves &mdash; an &ldquo;in-hadron condensate&rdquo; &mdash; rather than a space-filling
+    order parameter. This was further elaborated in &ldquo;Confinement Contains
+    Condensates&rdquo; (2012), which argued that if quark-hadron duality is real in QCD, then
+    all condensates are wholly contained within hadrons.
+  </p>
+
+  <p>
+    The Brodsky&ndash;Roberts collaboration also produced the landmark paper &ldquo;Imaging
+    Dynamical Chiral Symmetry Breaking: Pion Wave Function on the Light Front&rdquo; (2013,
+    <em>Physical Review Letters</em>), with <strong>Lei Chang</strong>,
+    <strong>Ian Clo&euml;t</strong>, Schmidt, and Tandy. This projected the pion&rsquo;s
+    Bethe&ndash;Salpeter wave function onto the light front and showed that DCSB produces a
+    pion distribution amplitude that is a broad, concave function &mdash; significantly different
+    from both the asymptotic form and the narrow, end-point-concentrated forms assumed in some
+    perturbative QCD analyses.
+  </p>
+
+  <h3>Precision predictions and the baryon programme (2009&ndash;2018)</h3>
+
+  <p>
+    Working with <strong>Si-xue Qin</strong> and <strong>Jorge Segovia</strong>, Roberts
+    developed a comprehensive baryon physics programme using a Poincar&eacute;-covariant
+    quark-diquark Faddeev equation approach. The key insight: the same DCSB mechanism
+    generating constituent quark masses also produces strong, non-pointlike diquark correlations
+    within baryons. This framework yielded predictions for nucleon and Delta elastic form factors,
+    nucleon-to-Delta and nucleon-to-Roper electromagnetic transition form factors, and the spectra
+    of all flavour-SU(3) octet and decuplet baryons.
+  </p>
+
+  <p>
+    With Qin, Roberts developed the influential &ldquo;Interaction model for the gap
+    equation&rdquo; (2011), providing a momentum-dependent kernel consistent with both DSE and
+    lattice QCD results that became a standard tool in the field.
+  </p>
+
+  <p>
+    The collaboration with <strong>Volker D. Burkert</strong> (Jefferson Lab) on the Roper
+    resonance was a landmark achievement. For fifty years after its discovery in 1963, the proton&rsquo;s
+    first radial excitation had defied explanation. Their 2019 <em>Reviews of Modern Physics</em>
+    Colloquium synthesised a decade of Jefferson Lab CLAS data with DSE-based calculations to show
+    that the Roper is fundamentally a dressed-quark core augmented by a meson cloud that reduces
+    the core mass by approximately 20%.
+  </p>
+
+  <h3>The QCD effective charge (2012&ndash;present)</h3>
+
+  <p>
+    Working with <strong>Daniele Binosi</strong> (ECT*, Trento), Joannis Papavassiliou, and
+    Jos&eacute; Rodr&iacute;guez-Quintero, Roberts established the concept of a
+    &ldquo;process-independent effective charge&rdquo; for QCD &mdash; an analogue of the
+    Gell-Mann&ndash;Low effective coupling in QED. Their work demonstrated that this effective
+    charge saturates at infrared momenta, reflecting dynamical breaking of scale invariance and
+    the emergence of a gluon mass-scale. Using lattice QCD configurations at physical pion mass,
+    they obtained a parameter-free prediction achieving near-perfect agreement with the
+    independently measured Bjorken sum rule effective charge.
+  </p>
+
+  <p>
+    The collaboration with <strong>Alexandre Deur</strong> (Jefferson Lab) and Brodsky produced
+    two major reviews of the QCD running coupling in <em>Progress in Particle and Nuclear
+    Physics</em> (2016 and 2023), connecting perturbative QCD at high energies with
+    nonperturbative DSE predictions in the infrared.
+  </p>
+
+  <h3>Nanjing University and Emergent Hadron Mass (2019&ndash;present)</h3>
+
+  <p>
+    Roberts moved to Nanjing University in September 2019 as International Distinguished Professor
+    and Head of the newly established Institute for Nonperturbative Physics (INP). Here he
+    synthesised decades of DSE research into the unifying conceptual framework of
+    <strong>Emergent Hadron Mass</strong> (EHM).
+  </p>
+
+  <p>
+    The Higgs boson generates less than 2% of visible mass; EHM produces the remaining 98%. Roberts
+    identified three &ldquo;pillars&rdquo; supporting EHM: (1) a running gluon mass-scale, generated
+    dynamically through the Schwinger mechanism; (2) a process-independent effective charge that
+    saturates in the infrared; and (3) dressed-quark running masses that take constituent-like
+    values at infrared momenta. The comprehensive review &ldquo;Emergence of Hadron Mass and
+    Structure&rdquo; (2023, with <strong>Minghui Ding</strong> and Schmidt) is the definitive
+    statement of this framework. EHM has become a central organising concept for the physics
+    programme of the Electron&ndash;Ion Collider (EIC) at Brookhaven National Laboratory.
+  </p>
+
+  <p>
+    At Nanjing, Roberts continues to build a world-leading group &mdash; working with Ding,
+    <strong>Zhu-Fang Cui</strong>, <strong>Khepani Raya</strong>, and others on pion and kaon
+    parton distributions, generalised parton distributions, gravitational form factors, and the
+    prediction of observables measurable at the EIC. He was instrumental in defining the science
+    case for both the US EIC (contributing to the Yellow Report, his single most-cited paper with
+    over 1,470 citations) and the proposed Chinese Electron&ndash;Ion Collider (EicC).
+  </p>
+
+  <h3>By the numbers</h3>
+
+  <div class="info-card highlight">
+    <div class="card-title">Publication record</div>
+    Over 280 peer-reviewed articles &bull; 24,700+ citations &bull; h-index 89 &bull;
+    2 <em>Reviews of Modern Physics</em> articles &bull;
+    6 <em>Progress in Particle and Nuclear Physics</em> articles (the first four ranking
+    2nd, 9th, 69th, and 110th most-cited in that journal&rsquo;s 43-year history) &bull;
+    13 <em>Physical Review Letters</em> articles &bull;
+    400+ presentations including 160+ invited conference talks and lectures at 26 international
+    graduate schools.
+  </div>
+
+  <h3>Awards and recognition</h3>
 
   <div class="timeline">
     <div class="timeline-item">
-      <div class="year">1985–1995: Foundations</div>
-      <div class="event">
-        PhD at Flinders University (Adelaide, 1988) followed by a move to Argonne National
-        Laboratory. Early work establishing the DSE framework as a viable nonperturbative
-        tool for QCD. Key contributions: demonstrating DCSB in the gap equation, clarifying the
-        relationship between confinement and the analytic structure of the quark propagator,
-        and connecting DSE results to lattice QCD.
-      </div>
+      <div class="year">2001</div>
+      <div class="event">Fellow, American Physical Society</div>
     </div>
     <div class="timeline-item">
-      <div class="year">1996–2008: Hadron physics revolution</div>
-      <div class="event">
-        Collaboration with Peter Maris and Peter Tandy produces the foundational DSE
-        calculations of pion properties (mass, decay constant, form factor). Development of the
-        quark-diquark picture for baryons. Landmark review articles (2000, 2003) that established
-        DSEs as the standard continuum approach to nonperturbative QCD. Joint work with Brodsky
-        on in-hadron condensates and the cosmological constant problem.
-      </div>
+      <div class="year">2003</div>
+      <div class="event">Friedrich Wilhelm Bessel Research Award, Alexander von Humboldt Foundation</div>
     </div>
     <div class="timeline-item">
-      <div class="year">2009–2018: Precision and prediction</div>
-      <div class="event">
-        Shift toward precision predictions for JLab experiments. The Qin–Chang interaction
-        kernel (2011) provides a more sophisticated description of the quark-gluon interaction.
-        Extensive calculations of nucleon form factors, transition form factors, baryon spectra,
-        and parton distributions. Predictions for the pion's distribution amplitude and valence
-        quark distribution become benchmark tests for lattice QCD and future experiments.
-      </div>
+      <div class="year">2009</div>
+      <div class="event">Convocation Medal, Flinders University</div>
     </div>
     <div class="timeline-item">
-      <div class="year">2019–present: Emergent Hadron Mass</div>
-      <div class="event">
-        Moves to Nanjing University as International Distinguished Professor and Head of the
-        Institute for Nonperturbative Physics. The EHM framework crystallises: three pillars,
-        each with clear experimental signatures. Active role in defining the science case for the
-        EIC. Major reviews with Deur and Brodsky on the QCD running coupling, and with Ding and
-        Schmidt on hadron mass and structure. Over 112 papers now available as open-access
-        preprints.
-      </div>
+      <div class="year">2012</div>
+      <div class="event">International Fellow, Helmholtz Association</div>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2014</div>
+      <div class="event">Distinguished Performance Award, University of Chicago / Argonne LLC Board of Governors</div>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2015</div>
+      <div class="event">International Distinguished Professor, Chinese Ministry of Education</div>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2022</div>
+      <div class="event">Envoy of People&rsquo;s Friendship, Jiangsu Province</div>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2023</div>
+      <div class="event">Friendship Award, Jiangsu Province</div>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2025</div>
+      <div class="event">Doctoratum Honoris Causa, Universidad de Huelva (Spain)</div>
+    </div>
+    <div class="timeline-item">
+      <div class="year">2025</div>
+      <div class="event">International Science and Technology Cooperation Award, Nanjing University</div>
     </div>
   </div>
 </section>
@@ -1258,53 +1488,455 @@
 <!-- ═══════════════════════════════════════════════════
      FURTHER READING
      ═══════════════════════════════════════════════════ -->
-<section class="chapter" id="further">
-  <div class="chapter-number">Further Reading</div>
-  <h2>Key Papers and Resources</h2>
+<section class="chapter" id="papers">
+  <div class="chapter-number">Papers</div>
+  <h2>Selected Publications</h2>
 
   <p>
-    All of Roberts' papers are freely available on the arXiv preprint server. Here are
-    selected entry points, grouped by theme:
+    All of Roberts&rsquo; papers are freely available on the
+    <a href="https://arxiv.org">arXiv</a> preprint server. The following is a curated selection
+    of his most significant works, organised by theme. Citation counts are approximate and drawn
+    from <a href="https://inspirehep.net/authors/991582">INSPIRE-HEP</a>.
   </p>
 
-  <h3>Reviews and overviews</h3>
-  <p>
-    <a href="https://arxiv.org/abs/nucl-th/0005064">nucl-th/0005064</a> — DSEs: Density, Temperature and Continuum Strong QCD (2000, ~1000 citations)<br>
-    <a href="https://arxiv.org/abs/nucl-th/0301049">nucl-th/0301049</a> — DSEs: A Tool for Hadron Physics (2003)<br>
-    <a href="https://arxiv.org/abs/1203.5341">1203.5341</a> — Strong QCD and DSEs (2012)<br>
-    <a href="https://arxiv.org/abs/2102.01765">2102.01765</a> — Insights into Emergence of Mass from Pion and Kaon Structure (2021)<br>
-    <a href="https://arxiv.org/abs/2303.00723">2303.00723</a> — QCD Running Couplings and Effective Charges (2023)<br>
-    <a href="https://arxiv.org/abs/2211.07763">2211.07763</a> — Emergence of Hadron Mass and Structure (2023)
-  </p>
+  <!-- ── Early foundational DSE work ── -->
+  <div class="paper-group">
+  <h3>Early Foundational DSE Work (1990s)</h3>
 
-  <h3>The pion</h3>
-  <p>
-    <a href="https://arxiv.org/abs/nucl-th/9707003">nucl-th/9707003</a> — Pion Mass and Decay Constant (1998)<br>
-    <a href="https://arxiv.org/abs/1602.04016">1602.04016</a> — The Pion: An Enigma within the Standard Model (2016)<br>
-    <a href="https://arxiv.org/abs/1301.0324">1301.0324</a> — Imaging DCSB: Pion Wave Function on the Light Front (2013, PRL)<br>
-    <a href="https://arxiv.org/abs/2403.00629">2403.00629</a> — Pseudoscalar Mesons and Emergent Mass (2024)
-  </p>
+  <div class="paper-item">
+    <div class="paper-title">Dyson&ndash;Schwinger Equations and their Application to Hadronic Physics</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/hep-ph/9403224">hep-ph/9403224</a> &middot; 1994 &middot; Prog. Part. Nucl. Phys. 33<span class="citations">&middot; ~1,287 citations</span></div>
+    <div class="paper-summary">Established the DSE formalism as a quantitative framework for nonperturbative QCD, covering confinement, DCSB, and hadronic applications &mdash; the most-cited paper in hadro-particle physics by an Australian-born scientist.</div>
+  </div>
 
+  <div class="paper-item">
+    <div class="paper-title">On the Implications of Confinement</div>
+    <div class="paper-meta"><a href="https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=a%20roberts%20AND%20t%20implications%20confinement&ui-citation-summary=true">INSPIRE</a> &middot; 1992 &middot; Int. J. Mod. Phys. A 7<span class="citations">&middot; ~195 citations</span></div>
+    <div class="paper-summary">Demonstrated that confinement is expressed through the absence of real-axis mass poles in quark propagators, replaced by complex-conjugate singularities.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Goldstone Theorem and Diquark Confinement Beyond Rainbow&ndash;Ladder Approximation</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/9602012">nucl-th/9602012</a> &middot; 1996 &middot; Phys. Lett. B 380<span class="citations">&middot; ~438 citations</span></div>
+    <div class="paper-summary">Showed that repulsive corrections beyond rainbow-ladder truncation eliminate diquark bound-state poles while preserving the Goldstone theorem for pseudoscalar mesons.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Pi- and K-meson Bethe&ndash;Salpeter Amplitudes</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/9708029">nucl-th/9708029</a> &middot; 1997 &middot; Phys. Rev. C 56<span class="citations">&middot; ~645 citations</span></div>
+    <div class="paper-summary">Derived the exact relation between the pseudoscalar meson Bethe&ndash;Salpeter amplitude and the dressed-quark propagator, showing the Gell-Mann&ndash;Oakes&ndash;Renner relation is a corollary of the axial-vector Ward&ndash;Takahashi identity.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Pion Mass and Decay Constant</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/9707003">nucl-th/9707003</a> &middot; 1997 &middot; Phys. Rev. C 56<span class="citations">&middot; ~523 citations</span></div>
+    <div class="paper-summary">First fully self-consistent Poincar&eacute;-covariant DSE calculation of the pion mass and leptonic decay constant, establishing quantitative benchmarks for the rainbow-ladder truncation.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Survey of Heavy Meson Observables</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/9812063">nucl-th/9812063</a> &middot; 1998 &middot; Int. J. Mod. Phys. E 12<span class="citations">&middot; ~194 citations</span></div>
+    <div class="paper-summary">Extended DSE meson calculations to heavy-quark systems, computing masses, decay constants, and form factors across the full flavour range from pion to upsilon.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Electromagnetic Pion Form-factor and Neutral Pion Decay Width</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/hep-ph/9408233">hep-ph/9408233</a> &middot; 1996 &middot; Nucl. Phys. A 605<span class="citations">&middot; ~198 citations</span></div>
+    <div class="paper-summary">Calculated the pion electromagnetic form factor and &pi;<sup>0</sup>&rarr;&gamma;&gamma; decay width using confining DSE quark propagators and dressed vertices.</div>
+  </div>
+  </div>
+
+  <!-- ── Reviews and overviews ── -->
+  <div class="paper-group">
+  <h3>Reviews and Overviews</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">DSEs: Density, Temperature and Continuum Strong QCD</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/0005064">nucl-th/0005064</a> &middot; 2000 &middot; Prog. Part. Nucl. Phys. 45<span class="citations">&middot; ~646 citations</span></div>
+    <div class="paper-summary">Comprehensive review extending DSE applications to finite temperature and density, covering the QCD phase diagram, deconfinement, and quark-gluon plasma.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Dyson&ndash;Schwinger Equations: A Tool for Hadron Physics</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/0301049">nucl-th/0301049</a> &middot; 2003 &middot; Int. J. Mod. Phys. E 12<span class="citations">&middot; ~676 citations</span></div>
+    <div class="paper-summary">Pedagogical review demonstrating that DSEs furnish a Poincar&eacute;-covariant framework with symmetry-preserving truncations enabling proof of exact results in hadron physics.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Hadron Properties and Dyson&ndash;Schwinger Equations</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/0712.0633">0712.0633</a> &middot; 2008 &middot; Prog. Part. Nucl. Phys. 61<span class="citations">&middot; ~205 citations</span></div>
+    <div class="paper-summary">Overview of DSE phenomenology covering pseudoscalar and vector mesons, nucleon elastic and transition form factors, and the role of DCSB.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Distribution Functions of the Nucleon and Pion in the Valence Region</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1002.4666">1002.4666</a> &middot; 2010 &middot; Rev. Mod. Phys. 82<span class="citations">&middot; ~217 citations</span></div>
+    <div class="paper-summary"><em>Reviews of Modern Physics</em> article providing a combined experimental and theoretical perspective on nucleon and pion parton distribution functions at large Bjorken-<em>x</em>.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Collective Perspective on Advances in DSE QCD</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1201.3366">1201.3366</a> &middot; 2012 &middot; Commun. Theor. Phys. 58<span class="citations">&middot; ~364 citations</span></div>
+    <div class="paper-summary">Multi-author survey of contemporary DSE studies covering confinement, DCSB, the hadron spectrum, form factors, parton distributions, and heavy quarks.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Explanation and Prediction of Observables using Continuum Strong QCD</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1310.2651">1310.2651</a> &middot; 2014 &middot; Prog. Part. Nucl. Phys. 77<span class="citations">&middot; ~317 citations</span></div>
+    <div class="paper-summary">Major review highlighting progress in reliable computation and prediction of measurable hadron properties, introducing the paradigm of in-hadron condensates.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">The Pion: An Enigma within the Standard Model</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1602.04016">1602.04016</a> &middot; 2016 &middot; J. Phys. G 43<span class="citations">&middot; ~185 citations</span></div>
+    <div class="paper-summary">Comprehensive review of the pion&rsquo;s dual nature as both a Nambu&ndash;Goldstone boson and a quark-antiquark composite, surveying theory and experiment.</div>
+  </div>
+  </div>
+
+  <!-- ── Pion physics ── -->
+  <div class="paper-group">
+  <h3>Pion Physics</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">Imaging Dynamical Chiral Symmetry Breaking: Pion Wave Function on the Light Front</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1301.0324">1301.0324</a> &middot; 2013 &middot; Phys. Rev. Lett. 110<span class="citations">&middot; ~279 citations</span></div>
+    <div class="paper-summary">Demonstrated that DCSB produces a pion light-front distribution amplitude that is a broad, concave function at the hadronic scale, significantly different from the asymptotic form.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Pion Electromagnetic Form Factor at Spacelike Momenta</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1307.0026">1307.0026</a> &middot; 2013 &middot; Phys. Rev. C<span class="citations">&middot; ~215 citations</span></div>
+    <div class="paper-summary">Unified the prediction of the pion electromagnetic form factor with a broad PDA, showing that DCSB hardening effects reconcile DSE predictions with Jefferson Lab data.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Neutral Pion and its Electromagnetic Transition Form Factor</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1510.02799">1510.02799</a> &middot; 2016 &middot; Phys. Rev. D 93<span class="citations">&middot; ~130 citations</span></div>
+    <div class="paper-summary">Computed the &gamma;*&gamma;&rarr;&pi;<sup>0</sup> transition form factor on the entire spacelike domain, unifying it with the PDA and elastic form factor predictions.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Symmetry, Symmetry Breaking, and Pion Parton Distributions</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1905.05208">1905.05208</a> &middot; 2020 &middot; Chin. Phys. C 44<span class="citations">&middot; ~124 citations</span></div>
+    <div class="paper-summary">Showed that DCSB causes hardening of the pion&rsquo;s valence-quark distribution function, with the computed large-<em>x</em> behaviour matching the (1&minus;<em>x</em>)<sup>2</sup> expectation.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Pion and K-meson Electromagnetic Form Factors</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/9905056">nucl-th/9905056</a> &middot; 2000 &middot; Phys. Rev. C 62</div>
+    <div class="paper-summary">Definitive rainbow-ladder calculation of pion and kaon electromagnetic form factors in impulse approximation, achieving excellent agreement with experimental data.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Abelian Anomaly and Neutral Pion Production</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1009.0067">1009.0067</a> &middot; 2011 &middot; Few-Body Syst.<span class="citations">&middot; ~166 citations</span></div>
+    <div class="paper-summary">Explored the connection between the axial anomaly and neutral pion electroproduction, including the role of DCSB in the &gamma;*&gamma;*&pi;<sup>0</sup> vertex.</div>
+  </div>
+  </div>
+
+  <!-- ── DCSB / Dynamical mass generation ── -->
+  <div class="paper-group">
+  <h3>Dynamical Chiral Symmetry Breaking</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">Essence of the Vacuum Quark Condensate</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1005.4610">1005.4610</a> &middot; 2010 &middot; Phys. Rev. C 82<span class="citations">&middot; ~154 citations</span></div>
+    <div class="paper-summary">Showed that the chiral condensate is a property of hadrons (&ldquo;in-hadron condensate&rdquo;) rather than a space-filling order parameter, challenging the conventional vacuum picture.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Confinement Contains Condensates</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1202.2376">1202.2376</a> &middot; 2012 &middot; J. Phys. G 39<span class="citations">&middot; ~136 citations</span></div>
+    <div class="paper-summary">Argued that if quark-hadron duality is real in QCD, then all condensates are wholly contained within hadrons and do not fill spacetime.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Dynamical Chiral Symmetry Breaking and a Critical Mass</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/0605058">nucl-th/0605058</a> &middot; 2007 &middot; Phys. Rev. C 75</div>
+    <div class="paper-summary">Demonstrated the existence of a critical current-quark mass above which DCSB solutions are destabilised, bounding the domain of validity of the chiral expansion.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Sketching the Bethe&ndash;Salpeter Kernel</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/0903.5461">0903.5461</a> &middot; 2009 &middot; Phys. Rev. Lett. 103<span class="citations">&middot; ~277 citations</span></div>
+    <div class="paper-summary">Constructed the first Bethe&ndash;Salpeter kernel consistent with the gap equation kernel and capable of supporting lattice-QCD-verified DCSB.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Aspects and Consequences of a Dressed Quark&ndash;Gluon Vertex</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/0403012">nucl-th/0403012</a> &middot; 2004 &middot; Phys. Rev. C 70<span class="citations">&middot; ~207 citations</span></div>
+    <div class="paper-summary">Investigated the impact of a dressed quark-gluon vertex on DCSB and meson properties, comparing DSE predictions with lattice data for the quark mass function.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Dynamical Chiral Symmetry Breaking and the Fermion&ndash;Gauge-Boson Vertex</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1112.4847">1112.4847</a> &middot; 2011 &middot; Phys. Rev. C 84<span class="citations">&middot; ~103 citations</span></div>
+    <div class="paper-summary">Showed that the dressed fermion&ndash;gauge-boson vertex must contain structures generated by DCSB that are essential for maintaining Ward&ndash;Takahashi identities.</div>
+  </div>
+  </div>
+
+  <!-- ── Emergent Hadron Mass ── -->
+  <div class="paper-group">
   <h3>Emergent Hadron Mass</h3>
-  <p>
-    <a href="https://arxiv.org/abs/2006.08782">2006.08782</a> — Reflections upon the Emergence of Hadronic Mass (2020)<br>
-    <a href="https://arxiv.org/abs/2009.04011">2009.04011</a> — Empirical Consequences of Emergent Mass (2020)<br>
-    <a href="https://arxiv.org/abs/2101.08340">2101.08340</a> — On Mass and Matter (2021)
-  </p>
 
-  <h3>Baryon physics</h3>
-  <p>
-    <a href="https://arxiv.org/abs/1902.00026">1902.00026</a> — Spectrum of Light- and Heavy-Baryons (2019)<br>
-    <a href="https://arxiv.org/abs/1603.02722">1603.02722</a> — Baryons and the Borromeo (2016)<br>
-    <a href="https://arxiv.org/abs/2008.07630">2008.07630</a> — Diquark Correlations in Hadron Physics (2020)
-  </p>
+  <div class="paper-item">
+    <div class="paper-title">Emergence of Hadron Mass and Structure</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2211.07763">2211.07763</a> &middot; 2023 &middot; Particles 6<span class="citations">&middot; ~106 citations</span></div>
+    <div class="paper-summary">Definitive review of the EHM framework, presenting the three pillars (running gluon mass, process-independent effective charge, running quark mass) and their measurable consequences.</div>
+  </div>
 
-  <h3>Profiles and databases</h3>
+  <div class="paper-item">
+    <div class="paper-title">Insights into Emergence of Mass from Pion and Kaon Structure</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2102.01765">2102.01765</a> &middot; 2021 &middot; Prog. Part. Nucl. Phys. 120<span class="citations">&middot; ~202 citations</span></div>
+    <div class="paper-summary">Reviewed the role of EHM in pion and kaon properties and laid out the experimental programme needed to validate EHM predictions.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Reflections upon the Emergence of Hadronic Mass</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2006.08782">2006.08782</a> &middot; 2020 &middot; Eur. Phys. J. Spec. Top. 229</div>
+    <div class="paper-summary">Discussed how the Higgs boson generates less than 2% of visible mass and how EHM, operating through DCSB and confinement, produces the remainder.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Empirical Consequences of Emergent Mass</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2009.04011">2009.04011</a> &middot; 2020 &middot; Symmetry 12<span class="citations">&middot; ~93 citations</span></div>
+    <div class="paper-summary">Articulated the experimental signatures of EHM measurable at existing and planned facilities. Winner of the <em>Symmetry</em> 2020 Best Paper Award.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">On Mass and Matter</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2101.08340">2101.08340</a> &middot; 2021 &middot; AAPPS Bull. 31</div>
+    <div class="paper-summary">Concise overview of how the mass of visible matter emerges from QCD dynamics rather than the Higgs mechanism.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Perspective on the Origin of Hadron Masses</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1606.03909">1606.03909</a> &middot; 2017 &middot; Few-Body Syst. 58<span class="citations">&middot; ~93 citations</span></div>
+    <div class="paper-summary">Articulated the case that understanding hadron mass generation requires experiments at the EIC, JLab 12 GeV, and FAIR.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Hadron Structure: Perspective and Insights</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2503.05984">2503.05984</a> &middot; 2025</div>
+    <div class="paper-summary">Recent review highlighting EHM&rsquo;s role in shaping electromagnetic and gravitational form factors, nucleon resonances, and hadron parton distributions.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Insights into Meson and Baryon Structure using Continuum Schwinger Function Methods</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2601.08046">2601.08046</a> &middot; 2026</div>
+    <div class="paper-summary">Latest unified explanation of pion and proton electromagnetic and gravitational form factors through the EHM framework.</div>
+  </div>
+  </div>
+
+  <!-- ── Baryon structure ── -->
+  <div class="paper-group">
+  <h3>Baryon Structure and Spectra</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">Colloquium: Roper Resonance &mdash; Toward a Solution to the Fifty Year Puzzle</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1710.02549">1710.02549</a> &middot; 2019 &middot; Rev. Mod. Phys. 91<span class="citations">&middot; ~154 citations</span></div>
+    <div class="paper-summary"><em>Reviews of Modern Physics</em> colloquium synthesising a decade of JLab data and DSE theory to explain the Roper resonance as a dressed-quark core augmented by a meson cloud.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Completing the Picture of the Roper Resonance</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1504.04386">1504.04386</a> &middot; 2015 &middot; Phys. Rev. Lett. 115<span class="citations">&middot; ~142 citations</span></div>
+    <div class="paper-summary">Showed that the Roper resonance is the proton&rsquo;s first radial excitation with DCSB-generated diquark correlations, resolving a key feature of the fifty-year puzzle.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Toward Unifying the Description of Meson and Baryon Properties</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/0810.1222">0810.1222</a> &middot; 2009 &middot; Phys. Rev. C 79<span class="citations">&middot; ~159 citations</span></div>
+    <div class="paper-summary">First unified DSE treatment of both mesons and baryons using identical interaction kernels, demonstrating consistency between the two sectors.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Nucleon and &Delta; Elastic and Transition Form Factors</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1408.2919">1408.2919</a> &middot; 2014 &middot; Few-Body Syst. 55<span class="citations">&middot; ~132 citations</span></div>
+    <div class="paper-summary">Comprehensive quark-diquark Faddeev equation calculations of nucleon and Delta elastic form factors and the N&rarr;&Delta; electromagnetic transition.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Spectrum of Hadrons with Strangeness</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1204.2553">1204.2553</a> &middot; 2013 &middot; Phys. Rev. C 87<span class="citations">&middot; ~108 citations</span></div>
+    <div class="paper-summary">Extended the quark-diquark Faddeev equation approach to strange baryons, computing masses of octet and decuplet states with strangeness.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Studies of Nucleon Resonance Structure in Exclusive Meson Electroproduction</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1212.4891">1212.4891</a> &middot; 2013 &middot; Int. J. Mod. Phys. E 22<span class="citations">&middot; ~251 citations</span></div>
+    <div class="paper-summary">White paper on the JLab/CLAS programme for nucleon resonance electroexcitation, connecting measurements to DSE predictions.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Spectrum of Fully-heavy Tetraquarks from a Diquark+Antidiquark Perspective</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1911.00960">1911.00960</a> &middot; 2020 &middot; Eur. Phys. J. C 80<span class="citations">&middot; ~179 citations</span></div>
+    <div class="paper-summary">Used a relativised diquark model to predict masses of fully-heavy tetraquark systems including <em>cccc</em>, <em>bbbb</em>, and mixed-flavour states.</div>
+  </div>
+  </div>
+
+  <!-- ── Nucleon form factors ── -->
+  <div class="paper-group">
+  <h3>Nucleon Form Factors</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">Survey of Nucleon Electromagnetic Form Factors</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/0812.0416">0812.0416</a> &middot; 2009 &middot; Few-Body Syst. 46<span class="citations">&middot; ~167 citations</span></div>
+    <div class="paper-summary">Comprehensive survey including flavour separation of form factor contributions and prediction of a zero in the proton electric-to-magnetic form factor ratio.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Nucleon Electromagnetic Form Factors</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/0611050">nucl-th/0611050</a> &middot; 2006 &middot; Phys. Rev. C<span class="citations">&middot; ~241 citations</span></div>
+    <div class="paper-summary">Calculated proton and neutron electromagnetic form factors with DSE-dressed quarks, predicting a zero in G<sub>E</sub><sup>p</sup>/G<sub>M</sub><sup>p</sup> at large Q<sup>2</sup>.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Dressed-quark Anomalous Magnetic Moments</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1009.3458">1009.3458</a> &middot; 2013 &middot; Phys. Rev. Lett. 111<span class="citations">&middot; ~206 citations</span></div>
+    <div class="paper-summary">Showed that DCSB generates large dressed-quark anomalous magnetic moments that play a critical role in nucleon electromagnetic form factors.</div>
+  </div>
+  </div>
+
+  <!-- ── Parton distributions ── -->
+  <div class="paper-group">
+  <h3>Parton Distributions</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">Pion and Kaon Valence-quark Parton Distribution Functions</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1102.2448">1102.2448</a> &middot; 2011 &middot; Phys. Rev. C 83<span class="citations">&middot; ~103 citations</span></div>
+    <div class="paper-summary">First DSE calculation of pion and kaon valence-quark PDFs, with the ratio of kaon to pion <em>u</em>-quark distributions agreeing with Drell&ndash;Yan data.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Valence-quark Distribution Functions in the Pion</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1602.01502">1602.01502</a> &middot; 2016 &middot; Phys. Rev. D 93<span class="citations">&middot; ~119 citations</span></div>
+    <div class="paper-summary">Refined calculation of pion and kaon valence-quark distributions incorporating realistic momentum-dependent DSE kernels.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Kaon and Pion Parton Distributions</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2006.14075">2006.14075</a> &middot; 2020 &middot; Eur. Phys. J. C 80<span class="citations">&middot; ~118 citations</span></div>
+    <div class="paper-summary">First continuum QCD prediction of kaon parton distributions including all valence, glue, and sea contributions, revealing Higgs-boson modulation of EHM.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Revealing Pion and Kaon Structure via Generalised Parton Distributions</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2109.11686">2109.11686</a> &middot; 2022 &middot; Chin. Phys. C 46<span class="citations">&middot; ~124 citations</span></div>
+    <div class="paper-summary">First continuum QCD predictions for pion and kaon GPDs constrained by hadron-scale valence PDFs, providing windows onto EHM.</div>
+  </div>
+  </div>
+
+  <!-- ── QCD running coupling ── -->
+  <div class="paper-group">
+  <h3>QCD Running Coupling</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">The QCD Running Coupling</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1604.08082">1604.08082</a> &middot; 2016 &middot; Prog. Part. Nucl. Phys. 90</div>
+    <div class="paper-summary">Major review of &alpha;<sub>s</sub> across all momentum scales, connecting perturbative QCD at high energies with nonperturbative DSE and light-front holography predictions in the infrared.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">QCD Running Couplings and Effective Charges</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2303.00723">2303.00723</a> &middot; 2023 &middot; Prog. Part. Nucl. Phys. 134<span class="citations">&middot; ~90 citations</span></div>
+    <div class="paper-summary">Updated comprehensive review covering process-independent effective charges, lattice QCD determinations, and connections to EHM.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Process-independent Strong Running Coupling</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1612.04835">1612.04835</a> &middot; 2017 &middot; Phys. Rev. D 96<span class="citations">&middot; ~168 citations</span></div>
+    <div class="paper-summary">Calculated a process-independent QCD effective charge analogous to the Gell-Mann&ndash;Low coupling, finding near-perfect agreement with the Bjorken sum rule effective charge.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Effective Charge from Lattice QCD</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1912.08232">1912.08232</a> &middot; 2020 &middot; Chin. Phys. C 44<span class="citations">&middot; ~137 citations</span></div>
+    <div class="paper-summary">Used lattice QCD configurations at physical pion mass to obtain a parameter-free prediction of QCD&rsquo;s process-independent effective charge.</div>
+  </div>
+  </div>
+
+  <!-- ── Confinement and QCD phase diagram ── -->
+  <div class="paper-group">
+  <h3>Confinement and the QCD Phase Diagram</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">Bridging a Gap between Continuum-QCD and Ab Initio Predictions of Hadron Observables</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1412.4782">1412.4782</a> &middot; 2015 &middot; Phys. Lett. B 742<span class="citations">&middot; ~234 citations</span></div>
+    <div class="paper-summary">Demonstrated that the renormalisation-group-invariant running interaction predicted by gauge-sector analyses coincides with that needed to describe ground-state hadron observables.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Phase Diagram and Critical Endpoint for Strongly-interacting Quarks</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1011.2876">1011.2876</a> &middot; 2011 &middot; Phys. Rev. Lett. 106<span class="citations">&middot; ~230 citations</span></div>
+    <div class="paper-summary">Located the critical endpoint in the QCD phase diagram using chiral susceptibility methods within the DSE framework.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Locating the Gribov Horizon</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1706.04681">1706.04681</a> &middot; 2018 &middot; Phys. Rev. D 97<span class="citations">&middot; ~91 citations</span></div>
+    <div class="paper-summary">Explored whether a tree-level gluon propagator is consistent with lattice QCD and located the boundary of the fundamental modular region of gauge-field configuration space.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Interaction Model for the Gap Equation</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1108.0603">1108.0603</a> &middot; 2011 &middot; Phys. Rev. C 84<span class="citations">&middot; ~250 citations</span></div>
+    <div class="paper-summary">Introduced a momentum-dependent interaction kernel for the DSE gap equation consistent with modern DSE and lattice QCD results, becoming a standard tool in the field.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Natural Constraints on the Gluon&ndash;Quark Vertex</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1609.02568">1609.02568</a> &middot; 2018 &middot; Phys. Rev. C 97<span class="citations">&middot; ~118 citations</span></div>
+    <div class="paper-summary">Identified constraints on the dressed gluon-quark vertex imposed by multiplicative renormalisability and BRST symmetry, necessary for reliable DSE truncations.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Analysis of a Quenched Lattice-QCD Dressed-quark Propagator</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/nucl-th/0304003">nucl-th/0304003</a> &middot; 2003 &middot; Phys. Rev. C 68<span class="citations">&middot; ~237 citations</span></div>
+    <div class="paper-summary">Correlated quenched lattice QCD data on the dressed-quark propagator with the rainbow gap equation, identifying the need for vertex dressing.</div>
+  </div>
+  </div>
+
+  <!-- ── EIC science case ── -->
+  <div class="paper-group">
+  <h3>Electron&ndash;Ion Collider Science Case</h3>
+
+  <div class="paper-item">
+    <div class="paper-title">Science Requirements and Detector Concepts for the Electron&ndash;Ion Collider: EIC Yellow Report</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2103.05419">2103.05419</a> &middot; 2022 &middot; Nucl. Phys. A 1026<span class="citations">&middot; ~1,474 citations</span></div>
+    <div class="paper-summary">Comprehensive community white paper defining the physics case, detector requirements, and experimental programme for the US Electron&ndash;Ion Collider. Roberts&rsquo; single most-cited paper.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Electron&ndash;Ion Collider in China</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2102.09222">2102.09222</a> &middot; 2021 &middot; Front. Phys. 16<span class="citations">&middot; ~554 citations</span></div>
+    <div class="paper-summary">White paper for the proposed Chinese Electron&ndash;Ion Collider (EicC), covering science opportunities in hadron structure, EHM, and nuclear physics.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Pion and Kaon Structure at the Electron&ndash;Ion Collider</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/1907.08218">1907.08218</a> &middot; 2019 &middot; Eur. Phys. J. A 55<span class="citations">&middot; ~202 citations</span></div>
+    <div class="paper-summary">Laid out the science case for measuring pion and kaon structure at the EIC, connecting the mass budget of pseudoscalar mesons to five key experimental measurements.</div>
+  </div>
+
+  <div class="paper-item">
+    <div class="paper-title">Revealing the Structure of Light Pseudoscalar Mesons at the Electron&ndash;Ion Collider</div>
+    <div class="paper-meta"><a href="https://arxiv.org/abs/2102.11788">2102.11788</a> &middot; 2021 &middot; J. Phys. G 48<span class="citations">&middot; ~124 citations</span></div>
+    <div class="paper-summary">Detailed programme for measuring pion and kaon electromagnetic form factors, PDFs, and GPDs at the EIC to expose EHM mechanisms.</div>
+  </div>
+  </div>
+
+  <!-- ── Profiles and databases ── -->
+  <div class="paper-group">
+  <h3>Profiles and Databases</h3>
   <p>
-    <a href="https://inspirehep.net/authors/991582">INSPIRE-HEP author page</a><br>
+    <a href="https://inspirehep.net/authors/991582">INSPIRE-HEP author page</a> &mdash; complete publication list with citation metrics<br>
+    <a href="https://scholar.google.com/citations?user=5VRheK0AAAAJ">Google Scholar profile</a><br>
     <a href="https://inp.nju.edu.cn">Institute for Nonperturbative Physics, Nanjing University</a><br>
+    <a href="https://sites.google.com/view/cdroberts/home">Personal website</a><br>
     <a href="https://www.phy.anl.gov/theory/staff/cdroberts/cdr.html">Argonne profile (archived)</a>
   </p>
+  </div>
 </section>
 
 </div><!-- end .content -->
