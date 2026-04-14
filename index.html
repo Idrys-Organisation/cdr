@@ -4,7 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Where Does Mass Come From? — The Physics of Craig D. Roberts</title>
-
+<meta name="description" content="An illustrated guide to the physics of Craig D. Roberts — Dyson-Schwinger equations, dynamical chiral symmetry breaking, emergent hadron mass, and how QCD builds 98% of the visible matter in the Universe.">
+<meta property="og:title" content="Where Does Mass Come From? — The Physics of Craig D. Roberts">
+<meta property="og:description" content="The Higgs boson gets the headlines. But 98% of the mass of everything you can see arises from something far deeper. An illustrated guide to the physics of Craig D. Roberts.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cdr.idrys.org">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Where Does Mass Come From? — The Physics of Craig D. Roberts">
+<meta name="twitter:description" content="The Higgs boson gets the headlines. But 98% of visible mass arises from something far deeper. An illustrated guide to emergent hadron mass and the DSE framework.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#968;</text></svg>">
 
 <style>
   :root {
@@ -447,15 +455,151 @@
     margin: 0 auto;
   }
 
+  /* ── Navigation bar ──────────────────────────────── */
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(13, 17, 23, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    padding: 0;
+  }
+
+  .nav-bar.visible {
+    transform: translateY(0);
+  }
+
+  .nav-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .nav-inner::-webkit-scrollbar { display: none; }
+
+  .nav-brand {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    padding: 0.6rem 0.8rem 0.6rem 0;
+    border-right: 1px solid var(--border);
+    margin-right: 0.3rem;
+    flex-shrink: 0;
+  }
+
+  .nav-link {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.78rem;
+    padding: 0.6rem 0.5rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+    flex-shrink: 0;
+  }
+
+  .nav-link:hover {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* ── Back to top ────────────────────────────────── */
+  .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.2s;
+  }
+
+  .back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .back-to-top:hover {
+    transform: translateY(-2px);
+    background: var(--card);
+    border-color: var(--accent);
+  }
+
   /* ── Responsive ──────────────────────────────────── */
   @media (max-width: 600px) {
     body { font-size: 15px; }
     h2 { font-size: 1.5rem; }
     .pillars { grid-template-columns: 1fr; }
+    .nav-brand { display: none; }
+    .nav-link { font-size: 0.72rem; padding: 0.5rem 0.4rem; }
+    .back-to-top { bottom: 1rem; right: 1rem; width: 36px; height: 36px; }
+  }
+
+  /* ── Print ──────────────────────────────────────── */
+  @media print {
+    :root {
+      --bg: #fff; --bg2: #f8f8f8; --bg3: #f0f0f0;
+      --text: #111; --text-dim: #555; --accent: #1a5fb4;
+      --accent2: #2a7b3f; --accent3: #8a6d00; --accent4: #c01c1c;
+      --accent5: #6b3fa0; --border: #ccc; --card: #f5f5f5;
+    }
+    body { font-size: 11pt; line-height: 1.5; }
+    .hero { min-height: auto; padding: 2rem 0; background: none; }
+    .hero h1 { background: none; -webkit-text-fill-color: var(--accent); color: var(--accent); font-size: 1.8rem; }
+    .nav-bar, .back-to-top, .scroll-hint { display: none !important; }
+    .chapter { margin: 2rem 0; break-inside: avoid-page; }
+    .paper-item { break-inside: avoid; border: 1px solid #ddd; }
+    .info-card { box-shadow: none; border: 1px solid #ccc; }
+    a { color: var(--accent); }
+    a[href]::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #888; }
+    .paper-item a[href]::after { display: none; }
   }
 </style>
 </head>
 <body>
+
+<!-- ── Navigation bar ──────────────────────────────── -->
+<nav class="nav-bar" id="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand">CDR</span>
+    <a class="nav-link" href="#ch1">Mass Puzzle</a>
+    <a class="nav-link" href="#ch2">QCD</a>
+    <a class="nav-link" href="#ch3">DSEs</a>
+    <a class="nav-link" href="#ch4">DCSB</a>
+    <a class="nav-link" href="#ch5">Pion</a>
+    <a class="nav-link" href="#ch6">EHM</a>
+    <a class="nav-link" href="#ch7">Hadrons</a>
+    <a class="nav-link" href="#ch8">Experiments</a>
+    <a class="nav-link" href="#ch9">Career</a>
+    <a class="nav-link" href="#ch10">Big Picture</a>
+    <a class="nav-link" href="#papers">Papers</a>
+  </div>
+</nav>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">&#8593;</button>
 
 <!-- ═══════════════════════════════════════════════════
      HERO
@@ -1491,6 +1635,7 @@
 <section class="chapter" id="papers">
   <div class="chapter-number">Papers</div>
   <h2>Selected Publications</h2>
+  <p class="paper-count">62 papers across 10 themes</p>
 
   <p>
     All of Roberts&rsquo; papers are freely available on the
@@ -1944,10 +2089,36 @@
 <footer class="footer">
   <p>
     Compiled April 2026 as a companion to the Craig D. Roberts publication archive.<br>
-    Based on publicly available papers, reviews, and institutional resources.<br>
-    Equations rendered with <a href="https://www.mathjax.org/">MathJax</a>.
+    Based on publicly available papers, reviews, and institutional resources.
   </p>
 </footer>
+
+<script>
+(function() {
+  var navbar = document.getElementById('navbar');
+  var btn = document.getElementById('backToTop');
+  var hero = document.querySelector('.hero');
+  var heroBottom = hero.offsetTop + hero.offsetHeight;
+
+  window.addEventListener('scroll', function() {
+    var y = window.scrollY;
+    if (y > heroBottom - 60) {
+      navbar.classList.add('visible');
+    } else {
+      navbar.classList.remove('visible');
+    }
+    if (y > 600) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 
 </body>
 </html>
