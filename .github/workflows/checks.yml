@@ -1,0 +1,35 @@
+name: Static site checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  static-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Check release content
+        run: python3 scripts/check-static.py
+      - name: Build and inspect the static image
+        run: |
+          set -euo pipefail
+          docker build -t cdr-fixture .
+          container=$(docker run --detach --publish 127.0.0.1::8080 --env PORT=8080 cdr-fixture)
+          trap 'docker rm --force "$container" >/dev/null' EXIT
+          address=$(docker port "$container" 8080/tcp)
+          curl --fail --retry 10 --retry-connrefused --retry-delay 1 --max-time 10 --dump-header headers.txt "http://$address/" --output served.html
+          cmp index.html served.html
+          grep -qi '^X-Content-Type-Options: nosniff' headers.txt
+          grep -qi '^Content-Security-Policy:' headers.txt
+          curl --fail --max-time 10 "http://$address/favicon.svg" --output served-icon.svg
+          cmp favicon.svg served-icon.svg
+          curl --fail --max-time 10 "http://$address/robots.txt" --output served-robots.txt
+          cmp robots.txt served-robots.txt
