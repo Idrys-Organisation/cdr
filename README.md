@@ -15,6 +15,8 @@ official image's template expansion. `Dockerfile` copies only public assets.
 Run `python3 scripts/check-static.py` before review. It checks article landmarks,
 local anchors and assets, equation SVGs and alternative notation, and leftover
 TeX delimiters. CI also builds the image and checks its HTTP response and headers.
+The container check allows bounded startup retries, including connection resets,
+before comparing the exact response and asset bytes.
 For a local visual check, serve this directory with Python's static HTTP server.
 Check the page at 390 px and desktop width, expand the mass comparison using the
 keyboard, and scroll its table horizontally with the arrow keys. The static
